@@ -54,7 +54,7 @@ function renderFooter() {
       <div class="foot-grid">
         <div>
           <a class="brand" href="index.html">${LOGO}</a>
-          <p>Estratégia e gestão para equipas de kart endurance. Um projeto nascido no Iscte Sintra.</p>
+          <p>Estratégia e gestão para equipas de kart endurance. Um projeto nascido no Iscte.</p>
         </div>
         <div>
           <h4>Produto</h4>
@@ -84,7 +84,7 @@ function renderFooter() {
         </div>
       </div>
       <div class="foot-bottom">
-        <span>© ${year} StintOps · Iscte Sintra</span>
+        <span>© ${year} StintOps · Iscte</span>
         <span>A decisão de corrida é sempre da equipa.</span>
       </div>
     </div>

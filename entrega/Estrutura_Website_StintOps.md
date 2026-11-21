@@ -1,6 +1,6 @@
 # StintOps — Estruturação do Website Corporativo
 
-Empreendedorismo e Inovação I · Iscte Sintra · 2026/2027 · Grupo 14
+Empreendedorismo e Inovação I · Iscte · 2026/2027 · Grupo 14
 
 Público-alvo: equipas de kart endurance, em especial quem gere a estratégia na box (chefe de equipa, pilotos, responsável de cronometragem).
 Posicionamento: ferramenta de apoio à decisão transparente. Mostra os pressupostos e deixa a decisão final à equipa.
@@ -16,7 +16,7 @@ Tom: próximo e direto (tratamento por «tu»), com o vocabulário do paddock (s
 | --- | --- | --- | --- |
 | 0 | Homepage | `index.html` | Hero, problema, produto em destaque, como funciona, sobre (resumo), testemunhos, notícias, CTA secundário |
 | 1 | Produto | `produto.html` | Funcionalidades detalhadas, `#como-funciona`, `#roteiro` (protótipo vs. futuro) |
-| 1 | Sobre nós | `sobre.html` | História, missão, visão, valores, `#equipa`, Iscte Sintra |
+| 1 | Sobre nós | `sobre.html` | História, missão, visão, valores, `#equipa`, Iscte |
 | 1 | Notícias | `noticias.html` | Publicações e agenda de marcos |
 | 1 | FAQ | `faq.html` | Perguntas sobre produto, dados/cronometragem e programa piloto |
 | 1 | Contactos | `contactos.html` | Formulário (`#piloto`, `#demo`, outro assunto), email, localização |
@@ -47,7 +47,7 @@ Logótipo StintOps · Produto · Como funciona · Sobre nós · Notícias · FAQ
 - **Título: Toda a corrida num só ecrã. Cada paragem com fundamento.**
 - Descritivo: Tempos numa plataforma, pilotos num grupo de mensagens, paragens num caderno. O StintOps junta a cronometragem e os registos da equipa e compara alternativas de paragem com os pressupostos à vista. A decisão continua a ser vossa.
 - CTA: **[Aderir ao programa piloto]** · [Ver como funciona →]
-- Nota: Protótipo em desenvolvimento · Iscte Sintra · 2026
+- Nota: Protótipo em desenvolvimento · Iscte · 2026
 - Imagem: ilustração do painel (stints por piloto, ritmo, próxima paragem com duas alternativas e alerta de limite de stint)
 
 ### O problema
@@ -74,7 +74,7 @@ O StintOps é uma aplicação web de apoio à decisão. Organiza a corrida em te
 
 ### Sobre a empresa
 **Feito por quem anda no paddock**
-O StintOps nasceu no Iscte Sintra, pela mão de uma equipa de estudantes de engenharia com ligação direta ao karting de endurance. Vimos de perto como as decisões de boxes ainda se tomam com papel e intuição, e decidimos construir a ferramenta que nos faltava.
+O StintOps nasceu no Iscte, pela mão de uma equipa de estudantes de engenharia com ligação direta ao karting de endurance. Vimos de perto como as decisões de boxes ainda se tomam com papel e intuição, e decidimos construir a ferramenta que nos faltava.
 - Missão: dar a qualquer equipa de endurance informação clara e partilhada para decidir melhor durante a corrida.
 - Valores: A decisão é da equipa · Pressupostos à vista · Honestidade com os dados · Construído com quem corre
 - Link: [Conhecer a equipa →]
@@ -97,9 +97,9 @@ Procuramos equipas que queiram usar o protótipo em corrida e dizer-nos o que fu
 Caixa lateral: *Ainda não é altura? Recebe as novidades.* Um email por mês, no máximo, com o progresso do produto. [email] **[Subscrever]**
 
 ### Rodapé
-StintOps: Estratégia e gestão para equipas de kart endurance. Um projeto nascido no Iscte Sintra.
+StintOps: Estratégia e gestão para equipas de kart endurance. Um projeto nascido no Iscte.
 Produto (Funcionalidades, Como funciona, Roteiro, Programa piloto) · Empresa (Sobre nós, Equipa, Notícias) · Ajuda (FAQ, Contactos, email, Privacidade)
-© 2026 StintOps · Iscte Sintra · *A decisão de corrida é sempre da equipa.*
+© 2026 StintOps · Iscte · *A decisão de corrida é sempre da equipa.*
 
 ## SEO
 - Título e meta descrição próprios em cada página; `lang="pt-PT"`, URL canónico, Open Graph.
