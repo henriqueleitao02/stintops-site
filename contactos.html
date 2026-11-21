@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contactos e programa piloto — StintOps</title>
+  <meta name="description" content="Adere ao programa piloto do StintOps, pede uma demonstração ou fala com a equipa.">
+  <link rel="canonical" href="https://stintops.pt/contactos.html">
+  <meta property="og:title" content="Contactos e programa piloto — StintOps">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
+</head>
+<body>
+  <a class="skip" href="#main">Saltar para o conteúdo</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="crumbs"><a href="index.html">Início</a> / Contactos</p>
+        <p class="eyebrow">Contactos</p>
+        <h1>Vamos pôr a tua equipa na grelha</h1>
+        <p class="lead">Adere ao programa piloto, pede uma demonstração ou simplesmente diz olá. Respondemos por email.</p>
+      </div>
+    </section>
+
+    <section id="piloto" aria-labelledby="form-title">
+      <div class="wrap contact-grid">
+        <div class="card">
+          <h2 id="form-title" style="font-size:34px">Pedido de contacto</h2>
+          <form data-form="contacto" data-ok="Obrigado! Recebemos o teu pedido e respondemos em breve por email." novalidate>
+            <fieldset style="border:0;padding:0;margin:0 0 22px">
+              <legend style="font-weight:600;font-size:15px;margin-bottom:10px">O que procuras?</legend>
+              <div class="choice">
+                <label><input type="radio" name="pedido" value="piloto" checked><span>Aderir ao piloto<small>Testar numa prova real</small></span></label>
+                <label id="demo"><input type="radio" name="pedido" value="demo"><span>Demonstração<small>Ver o protótipo connosco</small></span></label>
+                <label><input type="radio" name="pedido" value="outro"><span>Outro assunto<small>Parcerias, imprensa, dúvidas</small></span></label>
+              </div>
+            </fieldset>
+            <div class="form-grid">
+              <div><label for="c-nome">Nome</label><input id="c-nome" name="nome" required autocomplete="name"></div>
+              <div><label for="c-email">Email</label><input id="c-email" name="email" type="email" required autocomplete="email"></div>
+              <div><label for="c-equipa">Equipa</label><input id="c-equipa" name="equipa" autocomplete="organization"></div>
+              <div>
+                <label for="c-funcao">Função na equipa</label>
+                <select id="c-funcao" name="funcao">
+                  <option value="">Escolher…</option>
+                  <option>Chefe de equipa</option>
+                  <option>Piloto</option>
+                  <option>Estratégia / cronometragem</option>
+                  <option>Organizador de provas</option>
+                  <option>Outra</option>
+                </select>
+              </div>
+              <div class="full"><label for="c-prova">Campeonato ou prova onde corres</label><input id="c-prova" name="prova" placeholder="Ex.: endurance de 6 horas, campeonato regional…"></div>
+              <div class="full"><label for="c-msg">Mensagem</label><textarea id="c-msg" name="mensagem" placeholder="Conta-nos como a tua equipa gere hoje a estratégia de corrida."></textarea></div>
+              <div class="full"><label class="check"><input type="checkbox" name="consentimento" required> Aceito que o StintOps use estes dados para responder ao meu pedido, nos termos da <a href="privacidade.html">política de privacidade</a>.</label></div>
+              <div class="full"><button class="btn btn-primary" type="submit">Enviar pedido</button></div>
+            </div>
+            <p class="form-msg" role="status"></p>
+          </form>
+        </div>
+
+        <aside>
+          <ul class="info-list">
+            <li><small>Email</small><a href="mailto:contacto@stintops.pt">contacto@stintops.pt</a></li>
+            <li><small>Onde estamos</small>Iscte Sintra<br>Sintra, Portugal</li>
+            <li><small>Tempo de resposta</small>Até 3 dias úteis</li>
+          </ul>
+          <div class="quote-box" style="margin-top:24px">
+            <small>Programa piloto</small>
+            <p style="font-size:20px;margin-top:10px">Usas o StintOps numa prova, com o nosso apoio, e dizes-nos o que melhorar. Sem custos para a equipa.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/main.js?v=2"></script>
+</body>
+</html>

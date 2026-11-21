@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notícias — StintOps</title>
+  <meta name="description" content="Novidades do StintOps: o progresso do protótipo, os marcos do projeto e a agenda de demonstrações.">
+  <link rel="canonical" href="https://stintops.pt/noticias.html">
+  <meta property="og:title" content="Notícias — StintOps">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
+</head>
+<body>
+  <a class="skip" href="#main">Saltar para o conteúdo</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="crumbs"><a href="index.html">Início</a> / Notícias</p>
+        <p class="eyebrow">Notícias</p>
+        <h1>Últimas da box</h1>
+        <p class="lead">O progresso do StintOps, volta a volta.</p>
+      </div>
+    </section>
+
+    <section aria-label="Publicações">
+      <div class="wrap split">
+        <div>
+          <p class="eyebrow">Agenda</p>
+          <h2>Próximos marcos</h2>
+          <ol class="timeline" style="margin-top:28px">
+            <li class="next"><time datetime="2026-12-17">17 dez 2026</time><h3>Apresentação e demonstração do protótipo</h3><p>Demonstração pública do fluxo completo de uma prova, no Iscte Sintra.</p></li>
+            <li class="next"><time datetime="2026-12">dez 2026</time><h3>Comparação de estratégias com IA</h3><p>Entrada no protótipo da comparação de alternativas de paragem e da explicação por IA.</p></li>
+          </ol>
+        </div>
+
+        <div class="prose">
+          <article id="prototipo">
+            <p class="eyebrow" style="margin-bottom:8px"><time datetime="2026-11-09">9 nov 2026</time></p>
+            <h2 style="margin-top:0">Arrancou o desenvolvimento do protótipo</h2>
+            <p>Terminada a fase de planeamento e arquitetura, a equipa começou a construir o primeiro fluxo completo do StintOps: receber os dados da corrida, associar pilotos a stints e registar paragens, com a informação partilhada por toda a equipa.</p>
+            <p>Seguem-se a análise de ritmo e regularidade, a configuração das regras da prova e, por fim, a comparação de estratégias.</p>
+          </article>
+          <hr style="border:0;border-top:1px solid var(--line);margin:40px 0">
+          <article id="ao-vivo">
+            <p class="eyebrow" style="margin-bottom:8px"><time datetime="2026-11-02">2 nov 2026</time></p>
+            <h2 style="margin-top:0">Cronometragem ao vivo entra no protótipo</h2>
+            <p>Com o plano do projeto fechado, decidimos que o protótipo vai receber os tempos em direto através de um serviço de dados de cronometragem normalizados, com recuperação automática se a ligação falhar.</p>
+            <p>Para os casos em que não há dados automáticos, a equipa poderá completar a informação à mão. Cada valor fica sempre identificado com a sua origem.</p>
+          </article>
+          <hr style="border:0;border-top:1px solid var(--line);margin:40px 0">
+          <article id="arranque">
+            <p class="eyebrow" style="margin-bottom:8px"><time datetime="2026-10-12">12 out 2026</time></p>
+            <h2 style="margin-top:0">Nasce o StintOps</h2>
+            <p>Arrancou oficialmente o projeto StintOps no Iscte Sintra. O objetivo: construir uma ferramenta que ajude as equipas de kart endurance a gerir pilotos, stints e paragens e a tomar melhores decisões de estratégia durante a corrida.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band dark" aria-labelledby="cta-title">
+      <div class="wrap">
+        <div>
+          <h2 id="cta-title">Não percas nenhuma volta</h2>
+          <p class="lead">Recebe as novidades do StintOps por email. No máximo uma vez por mês.</p>
+        </div>
+        <form class="newsletter" data-form="newsletter" data-ok="Subscrição registada. Obrigado!" novalidate>
+          <label class="sr-only" for="nl-email">Email</label>
+          <input id="nl-email" name="email" type="email" placeholder="o-teu@email.pt" required autocomplete="email">
+          <input type="hidden" name="tipo" value="newsletter">
+          <button class="btn btn-primary" type="submit">Subscrever</button>
+          <p class="form-msg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/main.js?v=2"></script>
+</body>
+</html>

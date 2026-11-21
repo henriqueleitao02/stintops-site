@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" font-family="Inter, Helvetica, Arial, sans-serif">
+  <rect width="1200" height="560" fill="#ffffff"/>
+  <text x="40" y="44" font-size="22" font-weight="700" fill="#111418">StintOps — Diagrama de navegação (site map)</text>
+  <text x="40" y="70" font-size="14" fill="#59636f">Cabeçalho e rodapé presentes em todas as páginas · CTA principal: «Aderir ao programa piloto» → Contactos (#piloto)</text>
+
+  <!-- ligações -->
+  <g stroke="#9aa6b4" stroke-width="2" fill="none">
+    <path d="M600 160 V200 H120 V240"/>
+    <path d="M600 200 H360 V240"/>
+    <path d="M600 200 V240"/>
+    <path d="M600 200 H840 V240"/>
+    <path d="M600 200 H1080 V240"/>
+    <path d="M120 300 V340"/>
+    <path d="M360 300 V340"/>
+    <path d="M1080 300 V340"/>
+  </g>
+  <!-- CTA (tracejado laranja) -->
+  <g stroke="#4f6b00" stroke-width="2.5" fill="none" stroke-dasharray="7 6">
+    <path d="M720 118 C 1000 108, 1150 150, 1150 236"/>
+  </g>
+
+  <!-- nível 0 -->
+  <rect x="480" y="100" width="240" height="60" rx="10" fill="#111418"/>
+  <text x="600" y="128" text-anchor="middle" font-size="17" font-weight="700" fill="#fff">Homepage</text>
+  <text x="600" y="148" text-anchor="middle" font-size="12" fill="#9aa6b4">index.html</text>
+
+  <!-- nível 1 -->
+  <g font-size="16" font-weight="650" fill="#111418" text-anchor="middle">
+    <rect x="30" y="240" width="180" height="60" rx="10" fill="#f4f5f6" stroke="#111418" stroke-width="1.5"/>
+    <text x="120" y="268">Produto</text>
+    <rect x="270" y="240" width="180" height="60" rx="10" fill="#f4f5f6" stroke="#111418" stroke-width="1.5"/>
+    <text x="360" y="268">Sobre nós</text>
+    <rect x="510" y="240" width="180" height="60" rx="10" fill="#f4f5f6" stroke="#111418" stroke-width="1.5"/>
+    <text x="600" y="268">Notícias</text>
+    <rect x="750" y="240" width="180" height="60" rx="10" fill="#f4f5f6" stroke="#111418" stroke-width="1.5"/>
+    <text x="840" y="268">FAQ</text>
+    <rect x="990" y="240" width="180" height="60" rx="10" fill="#b7df00"/>
+    <text x="1080" y="268" fill="#111418">Contactos</text>
+  </g>
+  <g font-size="12" fill="#59636f" text-anchor="middle">
+    <text x="120" y="288">produto.html</text>
+    <text x="360" y="288">sobre.html</text>
+    <text x="600" y="288">noticias.html</text>
+    <text x="840" y="288">faq.html</text>
+    <text x="1080" y="288" fill="#4f6b00">contactos.html</text>
+  </g>
+
+  <!-- nível 2 (secções/âncoras) -->
+  <g font-size="13" fill="#343c46">
+    <rect x="30" y="340" width="180" height="64" rx="8" fill="#fff" stroke="#c9cbc2" stroke-dasharray="4 4"/>
+    <text x="44" y="362">#como-funciona</text>
+    <text x="44" y="384">#roteiro</text>
+    <rect x="270" y="340" width="180" height="64" rx="8" fill="#fff" stroke="#c9cbc2" stroke-dasharray="4 4"/>
+    <text x="284" y="362">História · Missão</text>
+    <text x="284" y="384">Valores · #equipa</text>
+    <rect x="990" y="340" width="180" height="64" rx="8" fill="#fff" stroke="#c9cbc2" stroke-dasharray="4 4"/>
+    <text x="1004" y="362">#piloto (formulário)</text>
+    <text x="1004" y="384">#demo · Outro assunto</text>
+  </g>
+
+  <!-- rodapé -->
+  <rect x="30" y="490" width="1140" height="44" rx="8" fill="#111418"/>
+  <text x="50" y="517" font-size="13" fill="#e9edf2">Rodapé (todas as páginas): Produto · Sobre nós · Equipa · Notícias · FAQ · Contactos · Privacidade (privacidade.html)</text>
+
+  <!-- legenda -->
+  <g font-size="12" fill="#59636f">
+    <line x1="40" y1="455" x2="80" y2="455" stroke="#4f6b00" stroke-width="2.5" stroke-dasharray="7 6"/>
+    <text x="90" y="459">CTA principal «Aderir ao programa piloto»: presente no cabeçalho, no hero e no CTA final de todas as páginas, leva a Contactos #piloto</text>
+  </g>
+</svg>
