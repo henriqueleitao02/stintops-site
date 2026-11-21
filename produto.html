@@ -8,12 +8,13 @@
   <link rel="canonical" href="https://stintops.pt/produto.html">
   <meta property="og:title" content="Produto — StintOps">
   <meta property="og:description" content="Tudo o que a equipa precisa para gerir uma prova de kart endurance, num só ecrã.">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#0b0d10">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=2">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800;1,900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=8">
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
   <a class="skip" href="#main">Saltar para o conteúdo</a>
@@ -24,10 +25,10 @@
       <div class="wrap">
         <p class="crumbs"><a href="index.html">Início</a> / Produto</p>
         <p class="eyebrow">Produto</p>
-        <h1>Tudo o que a box precisa, num só ecrã</h1>
+        <h1>Tudo o que a box precisa, <span class="it">num só ecrã</span></h1>
         <p class="lead">O StintOps é uma aplicação web de apoio à decisão para equipas de kart endurance. Junta os dados da corrida, organiza o trabalho da equipa e ajuda a escolher a próxima paragem.</p>
         <div class="cta-row" style="margin-top:28px">
-          <a class="btn btn-primary" href="contactos.html#piloto">Aderir ao programa piloto</a>
+          <a class="btn btn-primary arrow" href="contactos.html#piloto">Aderir ao programa piloto</a>
           <a class="btn btn-ghost" href="contactos.html#demo">Pedir demonstração</a>
         </div>
       </div>
@@ -112,26 +113,28 @@
       <div class="wrap">
         <div class="section-head">
           <p class="eyebrow">Por dentro</p>
-          <h2 id="ecras-title">Os quatro ecrãs do protótipo</h2>
-          <p class="lead">Do regulamento à decisão de boxes. Os dados mostrados são fictícios.</p>
+          <h2 id="ecras-title">Os quatro ecrãs <span class="it">do protótipo</span></h2>
+          <p class="lead">Do regulamento à decisão de boxes. Escolhe um ecrã para o explorar. Os dados são fictícios.</p>
         </div>
-        <div class="shots">
-          <figure class="shot">
-            <div class="frame"><img src="assets/img/app-prova.jpg" alt="Ecrã Prova: regras da prova, ligação à sessão de cronometragem e pilotos da equipa" loading="lazy" width="628" height="354"></div>
-            <figcaption><b>Prova e regras</b><span>Duração, paragens obrigatórias, limites de stint e de condução. Liga a sessão de cronometragem ou usa um replay de teste.</span></figcaption>
-          </figure>
-          <figure class="shot">
-            <div class="frame"><img src="assets/img/app-corrida.jpg" alt="Ecrã Corrida: tempo restante, stint atual, paragens cumpridas, ritmo do stint e alertas" loading="lazy" width="628" height="354"></div>
-            <figcaption><b>Painel da corrida</b><span>Tempo restante, stint atual face ao limite, ritmo e regularidade, e alertas do que falta cumprir.</span></figcaption>
-          </figure>
-          <figure class="shot">
-            <div class="frame"><img src="assets/img/app-stints.jpg" alt="Ecrã Stints e paragens: tabela de stints, condução acumulada e registo de paragem" loading="lazy" width="628" height="354"></div>
-            <figcaption><b>Stints e paragens</b><span>Registo partilhado pela equipa. Cada valor indica se foi observado, corrigido ou introduzido à mão.</span></figcaption>
-          </figure>
-          <figure class="shot">
-            <div class="frame"><img src="assets/img/app-estrategia.jpg" alt="Ecrã Estratégia: pressupostos, alternativas A e B e explicação por IA" loading="lazy" width="628" height="354"></div>
-            <figcaption><b>Estratégia</b><span>Alternativas verificadas contra as regras, explicação por IA e a decisão final nas mãos da equipa.</span></figcaption>
-          </figure>
+        <div class="tour" data-tour>
+          <div class="tour-tabs" role="tablist" aria-label="Ecrãs da aplicação">
+            <button class="tour-tab" role="tab" data-slug="prova"><b><em>01</em> Prova e regras</b><span>Duração, paragens obrigatórias, limites de stint e de condução. Liga a sessão de cronometragem ou usa um replay de teste.</span><i></i></button>
+            <button class="tour-tab" role="tab" data-slug="corrida"><b><em>02</em> Painel da corrida</b><span>Tempo restante, stint atual face ao limite, ritmo e regularidade, e alertas do que falta cumprir.</span><i></i></button>
+            <button class="tour-tab" role="tab" data-slug="stints"><b><em>03</em> Stints e paragens</b><span>Registo partilhado pela equipa. Cada valor indica se foi observado, corrigido ou introduzido à mão.</span><i></i></button>
+            <button class="tour-tab" role="tab" data-slug="estrategia"><b><em>04</em> Estratégia</b><span>Alternativas verificadas contra as regras, explicação por IA e a decisão final nas mãos da equipa.</span><i></i></button>
+          </div>
+          <div>
+            <div class="browser">
+              <div class="browser-bar"><i></i><i></i><i></i><span data-url>app.stintops.pt/prova</span></div>
+              <div class="tour-screens">
+                <div data-screen="prova" role="img" aria-label="Ecrã Prova: regras da prova, ligação à cronometragem e pilotos da equipa"></div>
+                <div data-screen="corrida" data-live role="img" aria-label="Ecrã Corrida: tempo restante, stint atual, paragens, ritmo e alertas"></div>
+                <div data-screen="stints" role="img" aria-label="Ecrã Stints e paragens: tabela de stints, condução acumulada e registo de paragem"></div>
+                <div data-screen="estrategia" role="img" aria-label="Ecrã Estratégia: pressupostos, alternativas A e B e explicação por IA"></div>
+              </div>
+            </div>
+            <p class="tour-caption"></p>
+          </div>
         </div>
       </div>
     </section>
@@ -194,7 +197,7 @@
           <p class="lead">Adere ao programa piloto e usa o protótipo na tua próxima prova, com o nosso apoio.</p>
         </div>
         <div class="cta-row">
-          <a class="btn btn-primary" href="contactos.html#piloto">Aderir ao programa piloto</a>
+          <a class="btn btn-primary arrow" href="contactos.html#piloto">Aderir ao programa piloto</a>
           <a class="btn btn-ghost" href="faq.html">Perguntas frequentes</a>
         </div>
       </div>
@@ -202,6 +205,6 @@
   </main>
 
   <div id="site-footer"></div>
-  <script src="assets/js/main.js?v=3"></script>
+  <script src="assets/js/main.js?v=8"></script>
 </body>
 </html>

@@ -12,12 +12,13 @@
   <meta property="og:description" content="Cronometragem, stints e paragens da equipa num só lugar, com comparação de estratégias explicada.">
   <meta property="og:image" content="https://stintops.pt/assets/img/app-corrida.jpg">
   <meta property="og:locale" content="pt_PT">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#0b0d10">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=2">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800;1,900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=8">
+  <script>document.documentElement.classList.add("js")</script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -38,90 +39,110 @@
     <!-- HERO -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="wrap">
-        <div>
-          <p class="eyebrow">Estratégia e gestão para kart endurance</p>
-          <h1 id="hero-title">Toda a corrida num só ecrã. <span class="hl">Cada paragem com fundamento.</span></h1>
-          <p class="lead">Tempos numa plataforma, pilotos num grupo de mensagens, paragens num caderno. O StintOps junta a cronometragem e os registos da equipa e compara alternativas de paragem com os pressupostos à vista. A decisão continua a ser vossa.</p>
+        <div class="hero-in">
+          <p class="eyebrow live">Estratégia e gestão para kart endurance</p>
+          <h1 id="hero-title">Toda a corrida num só ecrã. <span class="it">Cada paragem com fundamento.</span></h1>
+          <p class="lead">Tempos, pilotos, stints e regras da prova juntos, em tempo real. O StintOps avisa antes de um limite ser ultrapassado e compara alternativas de paragem com os pressupostos à vista. A decisão continua a ser vossa.</p>
           <div class="cta-row">
-            <a class="btn btn-primary" href="contactos.html#piloto">Aderir ao programa piloto</a>
-            <a class="btn btn-ghost arrow" href="#como-funciona">Ver como funciona</a>
+            <a class="btn btn-primary arrow" href="contactos.html#piloto">Aderir ao programa piloto</a>
+            <a class="btn btn-ghost" href="#por-dentro">Ver o produto em ação</a>
           </div>
-          <div class="hero-note">
-            <span class="pill green">Protótipo em desenvolvimento</span>
-            <span class="pill">Iscte · 2026</span>
-          </div>
+          <ul class="proof">
+            <li>Cronometragem ao vivo</li>
+            <li>Regras da prova verificadas</li>
+            <li>Explicação com IA</li>
+          </ul>
         </div>
 
-        <!-- Réplica do ecrã «Painel da corrida» (dados fictícios) -->
-        <figure style="margin:0">
-          <div class="app" role="img" aria-label="Painel da corrida do StintOps: tempo restante, stint atual, paragens obrigatórias, ritmo do stint e alertas">
-            <div class="app-bar">
-              <span class="wordmark"><i>S</i>tintops</span>
-              <div class="app-tabs"><span>Prova</span><span class="on">Corrida</span><span>Stints e paragens</span><span>Estratégia</span></div>
-              <span class="pill green">Dados atuais · há 3 s</span>
-              <span class="app-av">GJ</span>
-            </div>
-            <div class="app-body">
-              <div class="app-kpis">
-                <div class="app-card"><small>Tempo restante</small><strong>3:10:40</strong><em>Volta 176 · posição 5.ª</em></div>
-                <div class="app-card"><small>Stint atual · Piloto B</small><strong>46:30 <span>/ 50 min</span></strong><div class="bar"><b style="width:93%;background:var(--orange)"></b></div></div>
-                <div class="app-card"><small>Paragens obrigatórias</small><strong>3 <span>/ 8 cumpridas</span></strong><div class="bar"><b style="width:37.5%;background:var(--lime)"></b></div></div>
-              </div>
-              <div class="app-main">
-                <div class="app-card">
-                  <small>Ritmo do stint · 48 voltas válidas</small>
-                  <div class="app-stats">
-                    <div><em>Média</em><strong>54,62 s</strong></div>
-                    <div><em>Regularidade</em><strong>0,31 s</strong></div>
-                    <div><em>Melhor</em><strong>54,08 s</strong></div>
-                  </div>
-                  <svg class="app-chart" viewBox="0 0 300 80" aria-hidden="true">
-                    <line x1="0" y1="20" x2="300" y2="20" stroke="#eef0f2"/><line x1="0" y1="45" x2="300" y2="45" stroke="#eef0f2"/><line x1="0" y1="70" x2="300" y2="70" stroke="#eef0f2"/>
-                    <polyline fill="none" stroke="#111418" stroke-width="1.6" stroke-linejoin="round"
-                      points="4,62 14,48 22,52 30,44 40,50 50,45 60,49 70,42 80,47 90,43 100,48 110,40 120,45 130,41 140,46 150,39 160,43 170,38 180,42 190,36 200,40 210,35 220,39 230,33 240,37 250,32 260,35 270,30 280,33 290,27"/>
-                    <circle cx="290" cy="27" r="3.5" fill="#b7df00" stroke="#111418" stroke-width="1"/>
-                  </svg>
-                </div>
-                <div class="app-card">
-                  <small style="margin-bottom:8px">Alertas</small>
-                  <div class="app-alert amber">Stint atinge o limite em 3 min 30 s</div>
-                  <div class="app-alert gray">Faltam 5 paragens obrigatórias</div>
-                  <div class="app-alert blue">Piloto C: faltam 24 min de condução mínima</div>
-                  <span class="app-btn lime">Comparar alternativas de paragem</span>
-                  <span class="app-btn ghost">Registar paragem</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <figcaption class="app-caption">Painel da corrida do protótipo · dados fictícios</figcaption>
+        <figure class="hero-visual" style="margin:0">
+          <div class="chip c1"><span class="ic">✓</span><div><b>8 de 8 regras</b><span>configuradas e verificadas</span></div></div>
+          <div data-screen="corrida" data-live role="img" aria-label="Painel da corrida do StintOps a atualizar em tempo real: tempo restante, stint atual, paragens obrigatórias, ritmo e alertas"></div>
+          <div class="chip c2"><span class="ic">A</span><div><b>Parar agora</b><span>Cumpre as regras · 64,7 voltas</span></div></div>
+          <div class="chip c3"><span class="ic">IA</span><div><b>Adiar 5 voltas excede o limite</b><span>O stint chegaria a 51 min</span></div></div>
+          <figcaption class="app-caption">Painel da corrida do protótipo · dados fictícios, a atualizar em direto</figcaption>
         </figure>
       </div>
     </section>
 
-    <!-- PROBLEMA -->
-    <section aria-labelledby="problema-title" style="padding-top:0">
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Stints</span><span>Paragens obrigatórias</span><span>Ritmo</span><span>Regularidade</span><span>Trocas de piloto</span><span>Limites de condução</span><span>Cronometragem ao vivo</span><span>Estratégia</span>
+      </div>
+    </div>
+
+    <!-- NÚMEROS -->
+    <section class="stats-sec" aria-label="O StintOps em números">
+      <div class="wrap">
+        <div class="stats">
+          <div class="stat"><strong class="mono"><span data-count="1">1</span><small>ecrã</small></strong><p>para toda a equipa: box, pilotos e chefe de equipa</p></div>
+          <div class="stat"><strong class="mono"><span data-count="8">8</span><small>regras</small></strong><p>do regulamento verificadas ao longo da prova</p></div>
+          <div class="stat"><strong class="mono"><span data-count="2">2</span><small>alternativas</small></strong><p>de paragem comparadas lado a lado</p></div>
+          <div class="stat"><strong class="mono">0<small>contas</small></strong><p>feitas de cabeça no momento de chamar o piloto</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEMA: HOJE VS. COM STINTOPS -->
+    <section aria-labelledby="problema-title">
       <div class="wrap">
         <div class="section-head">
           <p class="eyebrow">O problema</p>
-          <h2 id="problema-title">Numa prova de endurance, a estratégia decide-se nas boxes</h2>
-          <p class="lead">Seis horas de corrida, vários pilotos, regras de stint e paragens obrigatórias. E a informação de que a equipa precisa para decidir está espalhada.</p>
+          <h2 id="problema-title">Numa prova de endurance, <span class="it">a estratégia decide-se nas boxes</span></h2>
+          <p class="lead">Seis horas, vários pilotos, limites de stint e paragens obrigatórias. E hoje a informação de que a equipa precisa para decidir está espalhada por todo o lado.</p>
         </div>
-        <div class="pains">
-          <article class="pain">
-            <span class="num">01</span>
-            <h3>Dados dispersos</h3>
-            <p>Os tempos estão na plataforma de cronometragem. Quem conduz, quando trocou e quanto demorou a paragem fica em notas soltas.</p>
-          </article>
-          <article class="pain">
-            <span class="num">02</span>
-            <h3>Decisões sob pressão</h3>
-            <p>Quando é preciso decidir a próxima paragem, não há tempo para cruzar números à mão nem para comparar alternativas com calma.</p>
-          </article>
-          <article class="pain">
-            <span class="num">03</span>
-            <h3>Regras fáceis de falhar</h3>
-            <p>Tempo máximo por stint, número de paragens obrigatórias, tempo mínimo de condução. Um erro de contas pode custar uma penalização.</p>
-          </article>
+
+        <div class="versus">
+          <div class="vs-col before">
+            <p class="vs-label">Hoje, na box</p>
+            <h3>Três ecrãs, um caderno e contas de cabeça</h3>
+            <div class="chaos" aria-hidden="true">
+              <div class="timing">
+                <small>Cronometragem</small>
+                <table>
+                  <tr><td>3</td><td>#22</td><td>54,41</td></tr>
+                  <tr><td>4</td><td>#08</td><td>54,55</td></tr>
+                  <tr class="me"><td>5</td><td>#17</td><td>54,62</td></tr>
+                  <tr><td>6</td><td>#31</td><td>54,70</td></tr>
+                </table>
+              </div>
+              <div class="chat">
+                <small>Grupo da equipa</small>
+                <p><em>Chefe</em>Quem entra a seguir??</p>
+                <p><em>Box</em>O B já vai em quanto tempo?</p>
+                <p><em>Piloto C</em>Alguém contou as paragens?</p>
+              </div>
+              <div class="note">Troca 3 → 1:28<br>Paragem <s>2:01</s> 2:05?<br>faltam 5 paragens??</div>
+              <div class="sticky">Penalização?!</div>
+            </div>
+            <ul class="vs-list">
+              <li><div><b>Dados dispersos</b>Tempos numa plataforma, trocas e paragens em notas soltas.</div></li>
+              <li><div><b>Decisões sob pressão</b>Sem tempo para cruzar números nem comparar alternativas.</div></li>
+              <li><div><b>Regras fáceis de falhar</b>Um erro de contas num limite de stint custa uma penalização.</div></li>
+            </ul>
+          </div>
+
+          <div class="vs-arrow" aria-hidden="true">→</div>
+
+          <div class="vs-col after">
+            <p class="vs-label">Com o StintOps</p>
+            <h3>Uma só fonte de verdade para a equipa</h3>
+            <div class="calm" aria-hidden="true">
+              <div class="calm-row">
+                <div class="app-card"><small>Stint atual · Piloto B</small><strong class="mono">46:30 <span>/ 50</span></strong><div class="bar"><b style="width:93%;background:var(--orange)"></b></div></div>
+                <div class="app-card"><small>Paragens</small><strong class="mono">3 <span>/ 8</span></strong><div class="bar"><b style="width:37.5%;background:var(--lime)"></b></div></div>
+              </div>
+              <div class="alts">
+                <div class="app-alert amber" style="margin:0">Stint atinge o limite em 3 min 30 s</div>
+                <div class="alt ok"><div><b>A · Parar agora</b><small>64,7 voltas projetadas</small></div><span class="pill green">Cumpre as regras</span></div>
+                <div class="alt"><div><b>B · Adiar 5 voltas</b><small>Stint chegaria a 51 min</small></div><span class="pill red">Incompatível</span></div>
+              </div>
+            </div>
+            <ul class="vs-list">
+              <li><div><b>Tudo no mesmo ecrã</b>Cronometragem, pilotos, stints e paragens, atualizados por toda a equipa.</div></li>
+              <li><div><b>Alternativas já calculadas</b>Quando é preciso decidir, os números estão prontos e explicados.</div></li>
+              <li><div><b>Alertas antes do limite</b>As regras da prova são verificadas por ti, volta a volta.</div></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -131,71 +152,120 @@
       <div class="wrap">
         <div class="section-head">
           <p class="eyebrow">O produto</p>
-          <h2 id="produto-title">Um centro de operações para a tua equipa</h2>
+          <h2 id="produto-title">Um centro de operações <span class="it">para a tua equipa</span></h2>
           <p class="lead">O StintOps é uma aplicação web de apoio à decisão. Organiza a corrida em tempo real e mostra à equipa o que está a acontecer e o que pode fazer a seguir.</p>
         </div>
-        <div class="features">
-          <article class="feature">
-            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M10 2h4"/></svg></div>
-            <div>
+
+        <div class="bento">
+          <article class="tile wide">
+            <div class="tile-txt">
               <h3>Cronometragem num só lugar</h3>
-              <p>Recebe os tempos da sessão em direto através de um serviço de dados normalizados. Quando faltam dados, a equipa completa-os à mão, sem perder a origem de cada registo.</p>
+              <p>Recebe os tempos da sessão em direto. Quando faltam dados, a equipa completa-os à mão, sem perder a origem de cada registo.</p>
+            </div>
+            <div class="tile-vis"><div class="feed" data-feed aria-hidden="true"></div></div>
+          </article>
+
+          <article class="tile">
+            <div class="tile-txt">
+              <h3>Pilotos e stints partilhados</h3>
+              <p>Quem está em pista, há quanto tempo e quanto falta a cada piloto.</p>
+            </div>
+            <div class="tile-vis">
+              <div class="drivers" aria-hidden="true">
+                <div class="drv"><div><b>Piloto A</b><span>1:21 / 2:30</span></div><div class="bar"><b style="--w:54%;background:var(--black)"></b></div></div>
+                <div class="drv"><div><b>Piloto B</b><span>0:46 / 2:30</span></div><div class="bar"><b style="--w:31%;background:var(--lime)"></b></div></div>
+                <div class="drv"><div><b>Piloto C</b><span>0:36 / mín. 1:00</span></div><div class="bar" style="--lim:60%"><b style="--w:36%;background:var(--orange)"></b></div></div>
+              </div>
             </div>
           </article>
-          <article class="feature">
-            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M2 20c0-3.3 2.7-6 6-6s6 2.7 6 6M14 15.5c.9-.6 1.9-1 3-1 2.8 0 5 2.2 5 5"/></svg></div>
-            <div>
-              <h3>Pilotos, stints e paragens partilhados</h3>
-              <p>Quem está em pista, há quanto tempo e quando foi a última troca. Toda a equipa vê a mesma informação, atualizada por quem está nas boxes.</p>
+
+          <article class="tile ink">
+            <div class="tile-txt">
+              <h3>Ritmo e regularidade</h3>
+              <p>Média e variação das voltas válidas, sem as voltas afetadas por paragens e incidentes.</p>
+            </div>
+            <div class="tile-vis">
+              <div class="spark-stats"><div><small>Média</small><b>54,62</b></div><div><small>Regularidade</small><b>0,31</b></div></div>
+              <svg class="spark" viewBox="0 0 400 120" preserveAspectRatio="none" aria-hidden="true">
+                <defs><linearGradient id="sparkfill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#b7df00" stop-opacity=".35"/><stop offset="1" stop-color="#b7df00" stop-opacity="0"/></linearGradient></defs>
+                <path class="a" d="M0 92 L25 70 50 78 75 62 100 72 125 58 150 66 175 52 200 60 225 46 250 54 275 40 300 48 325 34 350 42 375 28 400 30 V120 H0Z"/>
+                <path class="l" d="M0 92 L25 70 50 78 75 62 100 72 125 58 150 66 175 52 200 60 225 46 250 54 275 40 300 48 325 34 350 42 375 28 400 30"/>
+                <circle class="dot" cx="396" cy="30" r="5" fill="#fff" stroke="#b7df00" stroke-width="3"/>
+              </svg>
             </div>
           </article>
-          <article class="feature">
-            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 20h18M5 16l4-5 4 3 6-8"/></svg></div>
-            <div>
-              <h3>Ritmo e regularidade por stint</h3>
-              <p>Média e variação das voltas válidas de cada piloto, com as voltas afetadas por paragens e incidentes identificadas e postas de parte.</p>
-            </div>
-          </article>
-          <article class="feature">
-            <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h7M4 12h10M4 18h6M17 4v16M14 17l3 3 3-3"/></svg></div>
-            <div>
+
+          <article class="tile wide">
+            <div class="tile-txt">
               <h3>Estratégias comparadas e explicadas</h3>
               <p>Compara alternativas de paragem, verifica-as contra as regras da prova e explica cada resultado com apoio de IA: que pressupostos usou e que dados faltam.</p>
             </div>
+            <div class="tile-vis">
+              <div class="decide">
+                <div>
+                  <div class="alt ok"><div><b>A · Parar agora</b><span class="pill green">Cumpre as regras</span></div><em>Distância projetada: 64,7 voltas</em></div>
+                  <div class="alt no"><div><b>B · Adiar 5 voltas</b><span class="pill red">Incompatível</span></div><em>Stint chegaria a 51 min (limite 50)</em></div>
+                </div>
+                <div class="ia">
+                  <small><span class="pill">IA</span> Explicação</small>
+                  <div data-type data-type-on-view><p>A alternativa <b>A</b> é a única compatível com as regras. Adiar 5 voltas levaria o stint do Piloto B a cerca de 51 min, acima do limite. O ritmo após a troca e a perda nas boxes são <b>estimativas</b>.</p></div>
+                </div>
+              </div>
+            </div>
           </article>
-        </div>
-
-        <div class="shots" style="margin-top:48px">
-          <figure class="shot">
-            <div class="frame"><img src="assets/img/app-stints.jpg" alt="Ecrã Stints e paragens: tabela de stints por piloto, condução acumulada e formulário de registo de paragem" loading="lazy" width="628" height="354"></div>
-            <figcaption><b>Stints e paragens</b><span>Cada registo mostra a origem: observado na cronometragem, corrigido ou manual.</span></figcaption>
-          </figure>
-          <figure class="shot">
-            <div class="frame"><img src="assets/img/app-estrategia.jpg" alt="Ecrã Estratégia: pressupostos, duas alternativas de paragem e explicação por IA" loading="lazy" width="628" height="354"></div>
-            <figcaption><b>Estratégia</b><span>Duas alternativas, os pressupostos à vista e a decisão final nas mãos da equipa.</span></figcaption>
-          </figure>
         </div>
         <div class="more"><a class="btn btn-ghost arrow" href="produto.html">Ver todas as funcionalidades</a></div>
       </div>
     </section>
 
+    <!-- POR DENTRO: VISITA GUIADA -->
+    <section id="por-dentro" aria-labelledby="dentro-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Por dentro</p>
+          <h2 id="dentro-title">Do regulamento à decisão, <span class="it">em quatro ecrãs</span></h2>
+          <p class="lead">É assim o protótipo que estamos a construir. Escolhe um ecrã para o explorar. Os dados são fictícios.</p>
+        </div>
+        <div class="tour" data-tour>
+          <div class="tour-tabs" role="tablist" aria-label="Ecrãs da aplicação">
+            <button class="tour-tab" role="tab" data-slug="prova"><b><em>01</em> Prova</b><span>Configura as regras do regulamento e liga a sessão de cronometragem, ou usa um replay de teste.</span><i></i></button>
+            <button class="tour-tab" role="tab" data-slug="corrida"><b><em>02</em> Corrida</b><span>Tempo restante, stint atual face ao limite, ritmo e os alertas do que falta cumprir.</span><i></i></button>
+            <button class="tour-tab" role="tab" data-slug="stints"><b><em>03</em> Stints e paragens</b><span>Registo partilhado. Cada valor mostra se foi observado, corrigido ou introduzido à mão.</span><i></i></button>
+            <button class="tour-tab" role="tab" data-slug="estrategia"><b><em>04</em> Estratégia</b><span>Duas alternativas verificadas contra as regras e explicadas por IA. Quem decide é a equipa.</span><i></i></button>
+          </div>
+          <div>
+            <div class="browser">
+              <div class="browser-bar"><i></i><i></i><i></i><span data-url>app.stintops.pt/prova</span></div>
+              <div class="tour-screens">
+                <div data-screen="prova" role="img" aria-label="Ecrã Prova: regras da prova, ligação à cronometragem e pilotos da equipa"></div>
+                <div data-screen="corrida" data-live role="img" aria-label="Ecrã Corrida: tempo restante, stint atual, paragens, ritmo e alertas"></div>
+                <div data-screen="stints" role="img" aria-label="Ecrã Stints e paragens: tabela de stints, condução acumulada e registo de paragem"></div>
+                <div data-screen="estrategia" role="img" aria-label="Ecrã Estratégia: pressupostos, alternativas A e B e explicação por IA"></div>
+              </div>
+            </div>
+            <p class="tour-caption"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- COMO FUNCIONA -->
-    <section id="como-funciona" aria-labelledby="como-title">
+    <section id="como-funciona" class="band" aria-labelledby="como-title">
       <div class="wrap">
         <div class="section-head">
           <p class="eyebrow">Como funciona</p>
-          <h2 id="como-title">Da grelha à bandeira de xadrez em três passos</h2>
+          <h2 id="como-title">Da grelha à bandeira de xadrez <span class="it">em três passos</span></h2>
         </div>
         <div class="steps">
-          <div class="step" style="background:var(--surface)">
+          <div class="step">
             <h3>Prepara a prova</h3>
             <p>Indica os pilotos, as regras do regulamento (paragens obrigatórias, limites de stint) e liga a sessão de cronometragem.</p>
           </div>
-          <div class="step" style="background:var(--surface)">
+          <div class="step">
             <h3>Acompanha em equipa</h3>
             <p>Durante a corrida, quem está nas boxes regista trocas e paragens. Todos veem o mesmo estado, com alertas quando um limite se aproxima.</p>
           </div>
-          <div class="step" style="background:var(--surface)">
+          <div class="step">
             <h3>Compara e decide</h3>
             <p>O StintOps calcula alternativas para a próxima paragem e explica as diferenças. A equipa escolhe, com os números à frente.</p>
           </div>
@@ -204,12 +274,16 @@
     </section>
 
     <!-- SOBRE (RESUMO) -->
-    <section class="band" aria-labelledby="sobre-title">
+    <section aria-labelledby="sobre-title">
       <div class="wrap split">
         <div>
           <p class="eyebrow">Sobre nós</p>
-          <h2 id="sobre-title">Feito por quem anda no paddock</h2>
+          <h2 id="sobre-title">Feito por quem <span class="it">anda no paddock</span></h2>
           <p class="lead">O StintOps nasceu no Iscte, pela mão de uma equipa de estudantes de engenharia com ligação direta ao karting de endurance. Vimos de perto como as decisões de boxes ainda se tomam com papel e intuição, e decidimos construir a ferramenta que nos faltava.</p>
+          <div class="crew">
+            <div class="crew-av" aria-hidden="true"><span>GJ</span><span>HL</span><span>ES</span><span>NL</span><span>FB</span></div>
+            <p><b>Cinco pessoas, um objetivo</b>Pôr a melhor informação nas mãos de quem decide nas boxes.</p>
+          </div>
           <div class="quote-box" style="margin-top:28px">
             <small>Missão</small>
             <p>Dar a qualquer equipa de endurance informação clara e partilhada para decidir melhor durante a corrida.</p>
@@ -227,7 +301,7 @@
 
     <!-- TESTEMUNHOS -->
     <!-- TODO: substituir pelos testemunhos reais recolhidos no programa piloto (nome, foto, equipa). -->
-    <section aria-labelledby="testemunhos-title">
+    <section class="band" aria-labelledby="testemunhos-title">
       <div class="wrap">
         <div class="section-head">
           <p class="eyebrow">Testemunhos</p>
@@ -236,69 +310,76 @@
         </div>
         <div class="testis">
           <figure class="testi">
-            <blockquote>Espaço reservado ao testemunho do chefe de equipa da primeira equipa parceira.</blockquote>
+            <span class="pill amber">Em teste</span>
+            <blockquote>O testemunho da primeira equipa parceira aparece aqui depois da primeira prova com o StintOps.</blockquote>
             <figcaption class="who"><span class="avatar">?</span><div><strong>Equipa parceira</strong><span>Chefe de equipa</span></div></figcaption>
           </figure>
           <figure class="testi">
-            <blockquote>Espaço reservado ao testemunho de um piloto que tenha usado o StintOps em prova.</blockquote>
+            <span class="pill amber">Em teste</span>
+            <blockquote>E aqui, a opinião de um piloto que tenha corrido com o StintOps na box.</blockquote>
             <figcaption class="who"><span class="avatar">?</span><div><strong>Piloto</strong><span>Kart endurance</span></div></figcaption>
           </figure>
-          <figure class="testi">
-            <blockquote>A tua equipa pode ser a próxima. Adere ao programa piloto e ajuda-nos a construir o StintOps.</blockquote>
-            <figcaption class="who"><span class="avatar">+</span><div><strong>A tua equipa</strong><span><a href="contactos.html#piloto">Aderir ao piloto</a></span></div></figcaption>
+          <figure class="testi cta">
+            <blockquote>A tua equipa pode ser a primeira a correr com o StintOps.</blockquote>
+            <figcaption class="who"><span class="avatar">+</span><div><strong>A tua equipa</strong><span><a class="arrow" href="contactos.html#piloto">Aderir ao piloto </a></span></div></figcaption>
           </figure>
         </div>
       </div>
     </section>
 
     <!-- NOTÍCIAS -->
-    <section aria-labelledby="noticias-title" style="padding-top:0">
+    <section aria-labelledby="noticias-title">
       <div class="wrap">
         <div class="section-head">
           <p class="eyebrow">Notícias</p>
           <h2 id="noticias-title">Últimas da box</h2>
         </div>
         <div class="news">
-          <article class="post">
-            <div class="post-cover"><img src="assets/img/app-stints.jpg" alt="" loading="lazy"></div>
+          <a class="post" href="noticias.html#prototipo">
+            <div class="post-cover" data-cover="prototipo"></div>
             <div class="post-body">
               <time datetime="2026-11-09">9 nov 2026</time>
               <h3>Arrancou o desenvolvimento do protótipo</h3>
               <p>Depois da fase de planeamento, a equipa começou a construir o primeiro fluxo completo: dados da corrida, stints e paragens.</p>
-              <a class="read arrow" href="noticias.html#prototipo">Ler mais </a>
+              <span class="read arrow">Ler mais </span>
             </div>
-          </article>
-          <article class="post">
-            <div class="post-cover"><img src="assets/img/app-prova.jpg" alt="" loading="lazy"></div>
+          </a>
+          <a class="post" href="noticias.html#ao-vivo">
+            <div class="post-cover" data-cover="aovivo"></div>
             <div class="post-body">
               <time datetime="2026-11-02">2 nov 2026</time>
               <h3>Cronometragem ao vivo entra no protótipo</h3>
               <p>Fechámos o plano do projeto e decidimos que o protótipo vai receber os tempos em direto, com registo manual para completar o que faltar.</p>
-              <a class="read arrow" href="noticias.html#ao-vivo">Ler mais </a>
+              <span class="read arrow">Ler mais </span>
             </div>
-          </article>
-          <article class="post">
-            <div class="post-cover"><svg viewBox="0 0 320 160" aria-hidden="true"><rect width="320" height="160" fill="#111418"/><text x="160" y="92" text-anchor="middle" font-family="Inter, sans-serif" font-style="italic" font-weight="900" font-size="38" letter-spacing="-1.5" fill="#fff"><tspan fill="#b7df00">S</tspan>tintops</text></svg></div>
+          </a>
+          <a class="post" href="noticias.html#arranque">
+            <div class="post-cover" data-cover="arranque"></div>
             <div class="post-body">
               <time datetime="2026-10-12">12 out 2026</time>
               <h3>Nasce o StintOps</h3>
               <p>Arranque oficial do projeto no Iscte, com o objetivo de levar a gestão de estratégia às equipas de kart endurance.</p>
-              <a class="read arrow" href="noticias.html#arranque">Ler mais </a>
+              <span class="read arrow">Ler mais </span>
             </div>
-          </article>
+          </a>
         </div>
       </div>
     </section>
 
     <!-- CTA SECUNDÁRIO -->
     <section class="cta-band dark" aria-labelledby="cta-title">
+      <div class="flag" aria-hidden="true"></div>
       <div class="wrap">
         <div>
-          <p class="eyebrow">Programa piloto</p>
-          <h2 id="cta-title">Corres em endurance? Testa o StintOps na tua próxima prova.</h2>
-          <p class="lead">Procuramos equipas que queiram usar o protótipo em corrida e dizer-nos o que funciona e o que falta.</p>
-          <div class="cta-row" style="margin-top:24px">
-            <a class="btn btn-primary" href="contactos.html#piloto">Aderir ao programa piloto</a>
+          <p class="eyebrow live">Programa piloto · inscrições abertas</p>
+          <h2 id="cta-title">Corres em endurance? <span class="it">Testa o StintOps na tua próxima prova.</span></h2>
+          <ul class="perks">
+            <li><span><b>Usas o protótipo numa prova real</b>, com os dados da tua corrida.</span></li>
+            <li><span><b>Preparamos a prova contigo</b>: pilotos, regras e ligação à cronometragem.</span></li>
+            <li><span><b>Ajudas a decidir</b> o que o StintOps faz a seguir.</span></li>
+          </ul>
+          <div class="cta-row">
+            <a class="btn btn-primary arrow" href="contactos.html#piloto">Aderir ao programa piloto</a>
             <a class="btn btn-ghost" href="contactos.html#demo">Pedir demonstração</a>
           </div>
         </div>
@@ -319,6 +400,6 @@
   </main>
 
   <div id="site-footer"></div>
-  <script src="assets/js/main.js?v=3"></script>
+  <script src="assets/js/main.js?v=8"></script>
 </body>
 </html>
